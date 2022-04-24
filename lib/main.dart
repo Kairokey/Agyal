@@ -5,11 +5,15 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:sizer/sizer.dart';
 import 'Core/BlockObserver.dart';
+import 'Features/SplashScreen/splash_screen.dart';
 import 'app_route.dart';
 void main() async{
   BlocOverrides.runZoned(() {
     runApp(
-        DevicePreview(builder: (_) => const AgyalApp())
+        DevicePreview(
+          enabled: false,
+            builder: (_) => const AgyalApp()
+        )
     );
   },
   blocObserver: MyBlocObserver(),
@@ -26,22 +30,11 @@ class _AgyalAppState extends State<AgyalApp> {
   Widget build(BuildContext context) {
     return Sizer(
         builder: (context, orientation, deviceType) {
-          return MaterialApp(
+          return const MaterialApp(
             useInheritedMediaQuery: true,
             debugShowCheckedModeBanner: false,
             onGenerateRoute : AppRoute.onGenerateRoute,
-            home: Scaffold(
-              body: Center(
-                child: Text(
-                  "Agyal",
-                  style: TextStyle(
-                    fontFamily: 'Tajawal',
-                    fontSize: 20.sp,
-                    fontWeight: FontWeight.bold
-                  ),
-                ),
-              ),
-            ),
+            home: SplashScreen(),
           );
         }
     );
