@@ -5,8 +5,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../Core/colors.dart';
-import '../../Core/image.dart';
+import '../../Core/colors_manager.dart';
+import '../../Core/image_manager.dart';
 import '../OnBoardingScreen/onboarding_screen.dart';
 
 class SplashScreen extends StatelessWidget {

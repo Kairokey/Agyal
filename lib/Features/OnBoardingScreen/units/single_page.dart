@@ -1,4 +1,4 @@
-part of 'onboarding_screen.dart';
+part of '../onboarding_screen.dart';
 
 getPages(text , image, context) {
   return Container(

@@ -1,5 +1,5 @@
-import 'package:agyal/Core/colors.dart';
-import 'package:agyal/Core/image.dart';
+import 'package:agyal/Core/colors_manager.dart';
+import 'package:agyal/Core/image_manager.dart';
 import 'package:agyal/Core/user_responsive.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
@@ -8,7 +8,8 @@ import 'dart:ui' as ui;
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../../Core/routes.dart';
-part 'single_page.dart';
+part 'units/single_page.dart';
+
 class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({Key? key}) : super(key: key);
 

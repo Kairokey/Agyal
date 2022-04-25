@@ -1,7 +1,9 @@
+import 'package:agyal/Features/Home/controller.dart';
 import 'package:bloc/bloc.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
 import 'package:sizer/sizer.dart';
 import 'Core/BlockObserver.dart';
@@ -12,7 +14,12 @@ void main() async{
     runApp(
         DevicePreview(
           enabled: false,
-            builder: (_) => const AgyalApp()
+            builder: (_) => MultiProvider(
+              providers: [
+                BlocProvider (create: (_) => HomeCubit()),
+              ],
+                child: const AgyalApp()
+            )
         )
     );
   },
