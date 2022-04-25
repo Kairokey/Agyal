@@ -125,7 +125,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                         onTap: () async{
                           print(selectedIndex);
                           if (selectedIndex == 2) {
-                            Navigator.pushNamed(context, Routes.homePath);
+                            Navigator.pushNamed(context, Routes.signInPath);
                           } else{
                             controller.jumpToPage(selectedIndex + 1);
                           }

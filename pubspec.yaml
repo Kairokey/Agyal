@@ -43,6 +43,10 @@ dependencies:
   one_context:
   google_sign_in:
   pixel_perfect:
+  pin_code_fields:
+  argon_buttons_flutter:
+
+  circular_countdown_timer:
 
 dev_dependencies:
   flutter_test:
