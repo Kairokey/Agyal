@@ -12,7 +12,6 @@ CustomerAppBar({required onTap ,required title ,required icon , PreferredSize? b
     title: Row(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
-
       children: [
         Padding(
           padding: const EdgeInsets.all(8.0),

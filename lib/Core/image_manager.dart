@@ -24,5 +24,8 @@ class UserImage{
   static String gallery = imagepath + 'gallery.svg';
   static String onlineExam = imagepath + 'onlineExam.svg';
   static String aboutSchool = imagepath + 'aboutSchool.svg';
+  static String profile = imagepath + 'profile.png';
+  static String notifications = imagepath + 'notifications.svg';
+  static String image1 = imagepath + 'image1.svg';
   //
 }

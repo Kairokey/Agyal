@@ -1,5 +1,6 @@
 
 import 'package:agyal/Features/Home/states.dart';
+import 'package:agyal/Features/Home/view.dart';
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -12,10 +13,9 @@ import '../MoreView/more_view.dart';
 class HomeCubit extends Cubit<HomeStates>{
   HomeCubit() : super(ChangeBottomNavStateLoading());
    static HomeCubit get(context)=> BlocProvider.of(context);
-
    int currentIndex = 2;
    List<Widget> bottomScreens = const [
-     Center(child: Text( "Home" )),
+     HomeView(),
      ChatScreen(),
      CoursesScreen(),
      BooksScreen(),
